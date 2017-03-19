@@ -12,6 +12,8 @@ This plugin will add an admin menu item to the WooCommerce Admin Item to "List B
 
 == Description ==
 
+While WooCommerce makes it easy to allow for customers to backorder items, there is no mechanism for retailers to keep track of what orders actually have backordered items on them.
+
 This plugin will automatically detect backordered items for orders that are placed though WooCommerce.
 
 You can also modify the order meta (by editing the order) to update the Backordered quantity, or manually add "Backordered" as a Meta Key and the quantity as the Meta Value.  This plugin will only detect orders whose status is pending, processing, or on-hold.  Completed orders will automatically remove themselves from the list.
