@@ -1,4 +1,4 @@
-=== Plugin Name ===
+=== WooCommerce List Backorders ===
 Contributors: Howard Ehrenberg
 Donate link: https://www.duckdiverllc.com/woocommerce-list-backorders-plugin/
 Tags: Woocommerce, Backorders, Admin Functions
