@@ -2,7 +2,7 @@
 /*
   	Plugin Name: List Backorders for WooCommerce
   	Plugin URI: http://www.duckdiverllc.com/
-  	Version: 1.0
+  	Version: 1.0.1
   	Author: HowardE
   	Description: Get a list of backordered items and orders with backorders from the Woocommerce Tab.
 	License:           GNU General Public License v3
