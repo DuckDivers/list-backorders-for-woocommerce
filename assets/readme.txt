@@ -1,4 +1,4 @@
-=== WooCommerce List Backorders ===
+=== List Orders with Backorders for WooCommerce ===
 Contributors: Howard Ehrenberg
 Donate link: https://www.duckdiverllc.com/woocommerce-list-backorders-plugin/
 Tags: Woocommerce, Backorders, Admin Functions
@@ -8,7 +8,9 @@ Stable tag: 1.0
 License: GPLv3 
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
-This plugin will add an admin menu item to the WooCommerce Admin Item to "List Backorders" for easy viewing.
+A Wordpress Plugin to List Backordered Orders to keep track of them in WooCommerce
+
+This plugin will add an admin menu item to the WooCommerce Admin Item to "List Backorders" for easy viewing of orders and order-items that are backordered.
 
 == Description ==
 
@@ -24,7 +26,7 @@ This plugin requires the use of WooCommerce.
 
 == Installation ==
 
-1. Upload the plugin files to the `/wp-content/plugins/woocommerce-list-backorders` directory, or install the plugin through the WordPress plugins screen directly.
+1. Upload the plugin files to the `/wp-content/plugins/list-backorders-woocommerce` directory, or install the plugin through the WordPress plugins screen directly.
 2. Activate the plugin through the 'Plugins' screen in WordPress.
 
 == Screenshots ==
@@ -34,6 +36,7 @@ This plugin requires the use of WooCommerce.
 3. Once you've accessed the order item meta, use the "META KEY" = "Backordered" and the "META VALUE" = Number of items backordered.
 
 == Changelog ==
-
+= 1.0.1 =
+* Fix Version info
 = 1.0 =
 * Initial Release Version
