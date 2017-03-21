@@ -1,6 +1,6 @@
 <?php
 /*
-  	Plugin Name: Woocommerce List Backorders
+  	Plugin Name: List Backorders for WooCommerce
   	Plugin URI: http://www.duckdiverllc.com/
   	Version: 1.0
   	Author: HowardE
