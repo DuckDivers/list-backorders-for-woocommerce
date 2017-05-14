@@ -1,5 +1,7 @@
 # List Orders with Backorders for WooCommerce
 
+Available from the WordPress Plugin Repository at https://wordpress.org/plugins/list-backorders-for-woocommerce/
+
 A Wordpress Plugin to List Orders with Backordered items on them. This helps the store manager with a list of orders that need items to complete fulfillment.  This is not a stock list report, but only a report of order that are not shipped because of backorders. 
 
 This plugin will add an admin menu item to the WooCommerce Admin Item to "List Backorders" for easy viewing of orders with backorders, and the ordered-items that are backordered.
