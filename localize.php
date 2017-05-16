@@ -11,6 +11,9 @@ function dd_localize_backorder(){
 		case "nl":
 			$backorder = 'Nabesteld';
 			break;
+		case "nl-be":
+			$backorder = 'Nabesteld';
+			break;
 		case "de":
 			$backorder = 'Im Lieferrückstand';
 			break;
