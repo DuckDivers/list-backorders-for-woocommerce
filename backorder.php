@@ -1,10 +1,9 @@
-<div class="wrap"><h2>Backordered Items</h2>
 <?php
 
 global $wpdb;
 $prefix = $wpdb->prefix;
 
-$backordered = dd_localize_backorder();
+$backordered = translate( 'Backordered', 'woocommerce' );
 
 $backorder_query =  $wpdb->get_results("
 		SELECT  `{$wpdb->prefix}woocommerce_order_itemmeta`.`order_item_id` ,  `{$wpdb->prefix}woocommerce_order_items`.`order_id`,  `{$wpdb->prefix}woocommerce_order_items`.`order_item_name` , `{$wpdb->prefix}posts`.`post_date`, `{$wpdb->prefix}woocommerce_order_itemmeta`.`meta_value`
@@ -18,6 +17,8 @@ $backorder_query =  $wpdb->get_results("
 	);
 
 ?>
+
+<div class="wrap"><h2><?php echo translate('Items', 'woocommerce'). ' ' . $backordered; ?></h2>
 
 <?php if(count($backorder_query)>0): ?>
 <p>Click the order id to view the order | Click the Item Description to view the Item - To update backorder quantity, edit the order and then the item meta.</p></div>

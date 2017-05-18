@@ -1,16 +1,16 @@
 === List Orders with Backorders for WooCommerce ===
-Contributors: Howard Ehrenberg
+Contributors: thehowarde
 Donate link: https://www.duckdiverllc.com/woocommerce-list-backorders-plugin/
 Tags: Woocommerce, Backorders, Admin Functions
 Requires at least: 4.6
 Tested up to: 4.7
-Stable tag: 1.0.3
+Stable tag: 1.2
 License: GPLv3 
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
 A Wordpress Plugin to List Orders with Backordered items on them. This helps the store manager with a list of orders that need items to complete fulfillment.  This is not a stock list report, but only a report of order that are not shipped because of backorders. 
 
-This plugin will add an admin menu item to the WooCommerce Admin Item to "List Backorders" for easy viewing of orders with backorders, and the ordered-items that are backordered.
+This plugin will add an admin menu item to the WooCommerce Admin Item to "Backordered Items" for easy viewing of orders with backorders, and the ordered-items that are backordered.
 
 == Description ==
 
@@ -31,11 +31,15 @@ This plugin requires the use of WooCommerce.
 
 == Screenshots ==
 
-1. This is the main list view when clicking on the WooCommerce > List Backorders admin menu item.
+1. This is the main list view when clicking on the WooCommerce > Backordered Items admin menu item.
 2. This is the edit order on WooCommerce > Orders > Edit Order.  You can modify the order item meta by clicking on this pencil.
-3. Once you've accessed the order item meta, use the "META KEY" = "Backordered" and the "META VALUE" = Number of items backordered.
+3. Once you've accessed the order item meta, use the "META KEY" = "Backordered" (or your local translation for "Backordered") based on the official WooCommerce translations, and the "META VALUE" = Number of items backordered.
 
 == Changelog ==
+= 1.2 =
+Use WooCommerce translations for better localization
+= 1.1.2 =
+Add additional Localization
 = 1.1 =
 Added some localization for "Backordered"
 = 1.0.3 =
