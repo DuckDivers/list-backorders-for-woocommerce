@@ -4,11 +4,7 @@ Donate link: https://www.duckdiverllc.com/woocommerce-list-backorders-plugin/
 Tags: Woocommerce, Backorders, Admin Functions
 Requires at least: 4.6
 Tested up to: 4.7
-<<<<<<< HEAD
 Stable tag: 1.2
-=======
-Stable tag: 1.1.2
->>>>>>> origin/master
 License: GPLv3 
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
