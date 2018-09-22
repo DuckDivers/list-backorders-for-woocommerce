@@ -2,11 +2,18 @@
 /*
   	Plugin Name: List Backorders for WooCommerce
   	Plugin URI: http://www.duckdiverllc.com/
-  	Version: 1.2
-  	Author: thehowarde
+  	Version: 1.2.2
+  	Contributors: thehowarde
+	Author: Howard Ehrenberg
+	Author URI: https://www.howardehrenberg.com
   	Description: Get a list of backordered items and orders with backorders from the Woocommerce Tab.
 	License: GNU General Public License v3
 	License URI: http://www.gnu.org/licenses/gpl-3.0.html
+    Requires at least: 4.6
+    Tested up to: 4.9
+    Requires PHP: 5.4
+    WC requires at least: 2.0
+    WC tested up to: 3.2.5
  */
 if ( ! defined( 'ABSPATH' ) )
 exit; 

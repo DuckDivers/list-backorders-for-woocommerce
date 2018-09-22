@@ -1,10 +1,15 @@
 === List Orders with Backorders for WooCommerce ===
 Contributors: thehowarde
+Author: Howard Ehrenberg
+Author URI: https://www.howardehrenberg.com
 Donate link: https://www.duckdiverllc.com/woocommerce-list-backorders-plugin/
 Tags: Woocommerce, Backorders, Admin Functions
 Requires at least: 4.6
-Tested up to: 4.7
-Stable tag: 1.2
+Tested up to: 4.9
+Stable tag: 1.2.2
+Requires PHP: 5.4
+WC requires at least: 2.0
+WC tested up to: 3.2.5
 License: GPLv3 
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
