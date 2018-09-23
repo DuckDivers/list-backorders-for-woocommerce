@@ -2,7 +2,7 @@
 /*
   	Plugin Name: List Backorders for WooCommerce
   	Plugin URI: http://www.duckdiverllc.com/
-  	Version: 1.2.2
+  	Version: 2.0
   	Contributors: thehowarde
 	Author: Howard Ehrenberg
 	Author URI: https://www.howardehrenberg.com
@@ -11,20 +11,29 @@
 	License URI: http://www.gnu.org/licenses/gpl-3.0.html
     Requires at least: 4.6
     Tested up to: 4.9
-    Requires PHP: 5.4
+    Requires PHP: 5.6
     WC requires at least: 2.0
-    WC tested up to: 3.2.5
+    WC tested up to: 3.4.4
  */
-if ( ! defined( 'ABSPATH' ) )
-exit; 
 
-add_action('admin_menu', 'register_backorder_page');
-
-function register_backorder_page() {
-	$backorders = translate('Items', 'woocommerce') . ' ' . translate( 'Backordered', 'woocommerce' );
-    add_submenu_page( 'woocommerce', 'View Backorders List | By Duck Diver', $backorders , 'manage_woocommerce', 'manage-backorder', 'manage_backorder_callback' ); 
+// If this file is called directly, abort.
+if ( ! defined( 'WPINC' ) ) {
+	die;
 }
 
-function manage_backorder_callback() {
-    include("backorder.php");
+define('DD_LIST_BACKORDERS_WC_VERSION', '2.0');
+
+require plugin_dir_path( __FILE__ ) . 'includes/class-list-backorders.php';
+
+class dd_check_wc {
+    function __construct(){
+       add_action('admin_notices', array($this, 'on_admin_notices' ) );
+    }
+    function on_admin_notices(){
+        if ( !is_plugin_active( 'woocommerce/woocommerce.php' ) )  {
+            echo '<div class="error"><p>' . __('This plugin requires WooCommerce for it to work.', 'cf7-woo-products') . '</p></div>';
+        }
+    }
 }
+new dd_check_wc;
+$backorders = new DD_List_WC_Backorders;

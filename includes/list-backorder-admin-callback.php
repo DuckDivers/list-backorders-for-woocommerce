@@ -17,12 +17,24 @@ $backorder_query =  $wpdb->get_results("
 	);
 
 ?>
-
 <div class="wrap"><h2><?php echo translate('Items', 'woocommerce'). ' ' . $backordered; ?></h2>
-
+    <p>Click the <strong>order id</strong> to view the order | Click the <strong>Item Description</strong> to view the Item - To update backorder quantity, edit the order and then the item meta. You may sort by column headers, and group by available options.</p>
+    <div id="grouping-options">
+                <h4>Data Grouping Options</h4>
+                <ul class="nav nav-pills">
+                    <li class="nav-item" id="order">
+                        <a class="group-by nav-link" data-column="0" href="#">Group by Order ID</a>
+                    </li>    
+                    <li class="nav-item" id="item">
+                        <a class="group-by nav-link" data-column="1" href="#">Group by Item</a>
+                    </li>    
+                    <li class="nav-item" id="customer">
+                        <a class="group-by nav-link" data-column="2" href="#">Group by Customer</a>
+                    </li>    
+                </ul>    
+            </div>
 <?php if(count($backorder_query)>0): ?>
-<p>Click the order id to view the order | Click the Item Description to view the Item - To update backorder quantity, edit the order and then the item meta.</p></div>
-<table class="wp-list-table widefat fixed posts" style="width:98%">
+<table class="wp-list-table widefat fixed posts" id="report">
 <thead>
 	<tr>
 		<th>Order ID</th>
@@ -64,4 +76,4 @@ $backorder_query =  $wpdb->get_results("
    <h3>There are no backorders at this time</h3>
 </div>
 <?php endif; ?>		
-
+</div>
