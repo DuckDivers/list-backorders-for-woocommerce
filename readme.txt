@@ -25,6 +25,8 @@ This plugin will automatically detect backordered items for orders that are plac
 
 You can also modify the order meta (by editing the order) to update the Backordered quantity, or manually add "Backordered" as a Meta Key and the quantity as the Meta Value.  This plugin will only detect orders whose status is pending, processing, or on-hold.  Completed orders will automatically remove themselves from the list.
 
+Version 2.0 Includes jQuery DataTables to allow easy manipulation of the output of the backordered items list, and allows for export to PDF, XLS, or CSV files.
+
 == Requirements ==
 
 This plugin requires the use of WooCommerce.
@@ -41,6 +43,11 @@ This plugin requires the use of WooCommerce.
 3. Once you've accessed the order item meta, use the "META KEY" = "Backordered" (or your local translation for "Backordered") based on the official WooCommerce translations, and the "META VALUE" = Number of items backordered.
 
 == Changelog ==
+
+= 2.0 =
+Move to OOP version of plugin.
+Added DataTables to reporting.
+
 = 1.2 =
 Use WooCommerce translations for better localization
 = 1.1.2 =
