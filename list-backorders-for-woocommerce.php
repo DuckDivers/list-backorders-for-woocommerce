@@ -1,19 +1,19 @@
 <?php
 /*
-  	Plugin Name: List Backorders for WooCommerce
-  	Plugin URI: http://www.duckdiverllc.com/
-  	Version: 2.0
-  	Contributors: thehowarde
-	Author: Howard Ehrenberg
+	Plugin Name: List Backorders for WooCommerce
+	Plugin URI: http://www.duckdiverllc.com/
+	Version: 2.2
+	Contributors: thehowarde
 	Author URI: https://www.howardehrenberg.com
-  	Description: Get a list of backordered items and orders with backorders from the Woocommerce Tab.
-	License: GNU General Public License v3
+	Description: Get a list of backordered items and orders with backorders from the Woocommerce Tab.
+	Author: Howard Ehrenberg
 	License URI: http://www.gnu.org/licenses/gpl-3.0.html
-    Requires at least: 4.6
-    Tested up to: 4.9
-    Requires PHP: 5.6
-    WC requires at least: 2.0
-    WC tested up to: 3.4.4
+	License: GNU General Public License v3
+	Requires at least: 4.6
+	Tested up to: 5.4
+	Requires PHP: 5.6
+	WC requires at least: 3.0
+	WC tested up to: 4.2
  */
 
 // If this file is called directly, abort.
@@ -21,7 +21,7 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
-define('DD_LIST_BACKORDERS_WC_VERSION', '2.0');
+define('DD_LIST_BACKORDERS_WC_VERSION', '2.2');
 
 require plugin_dir_path( __FILE__ ) . 'includes/class-list-backorders.php';
 
@@ -36,4 +36,4 @@ class dd_check_wc {
     }
 }
 new dd_check_wc;
-$backorders = new DD_List_WC_Backorders;
+new DD_List_WC_Backorders;

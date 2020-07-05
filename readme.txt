@@ -5,15 +5,14 @@ Author URI: https://www.howardehrenberg.com
 Donate link: https://www.duckdiverllc.com/woocommerce-list-backorders-plugin/
 Tags: Woocommerce, Backorders, Admin Functions
 Requires at least: 4.6
-Tested up to: 4.9
-Stable tag: 2.0
-Requires PHP: 5.6
+Tested up to: 5.4
+Stable tag: 2.2
 WC requires at least: 2.0
-WC tested up to: 3.4
-License: GPLv3 
+WC tested up to: 4.2
+License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
-A Wordpress Plugin to List Orders with Backordered items on them. This helps the store manager with a list of orders that need items to complete fulfillment.  This is not a stock list report, but only a report of order that are not shipped because of backorders. 
+A Wordpress Plugin to List Orders with Backordered items on them. This helps the store manager with a list of orders that need items to complete fulfillment.  This is not a stock list report, but only a report of order that are not shipped because of backorders.
 
 This plugin will add an admin menu item to the WooCommerce Admin Item to "Backordered Items" for easy viewing of orders with backorders, and the ordered-items that are backordered.
 
@@ -26,6 +25,13 @@ This plugin will automatically detect backordered items for orders that are plac
 You can also modify the order meta (by editing the order) to update the Backordered quantity, or manually add "Backordered" as a Meta Key and the quantity as the Meta Value.  This plugin will only detect orders whose status is pending, processing, or on-hold.  Completed orders will automatically remove themselves from the list.
 
 Version 2.0 Includes jQuery DataTables to allow easy manipulation of the output of the backordered items list, and allows for export to PDF, XLS, or CSV files.
+
+Report Title is in `Ymd_backorder_list` Format.  This can be filtered in your functions.php with filter 'dd_list_backorders_report_title'
+
+for example:
+
+`add_filter('dd_list_backorders_report_title', function(){return 'this_is_the_title';});`
+
 
 == Requirements ==
 
@@ -44,6 +50,15 @@ This plugin requires the use of WooCommerce.
 
 == Changelog ==
 
+= 2.2 =
+Added SKU to Report
+
+= 2.1 =
+Added report title "yyyymmdd_backorder_list" and filter 'dd_list_backorders_report_title'
+
+= 2.0.2 =
+Verified for WC 4.x
+
 = 2.0 =
 Move to OOP version of plugin.
 Added DataTables to reporting.
@@ -55,7 +70,7 @@ Add additional Localization
 = 1.1 =
 Added some localization for "Backordered"
 = 1.0.3 =
-*Update the description 
+*Update the description
 *Modify Permissions
 = 1.0.2 =
 * File Location error fixed

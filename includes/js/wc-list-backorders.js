@@ -1,6 +1,5 @@
 (function( $ ) {
 	'use strict';
-
 	var table =  $('#report').DataTable({
     "pageLength": 25,
     dom: '<f><"dt-options"<"export-buttons"B>l>rtip',
@@ -13,9 +12,18 @@
             extend: 'copy',
             text: 'Copy to clipboard'
         },
-        'excel',
-        'pdf',
-        'csv'
+        { 
+            extend: 'excel',
+            title: dd_backorders.report_title
+        },
+        { 
+            extend: 'pdf',
+            title: dd_backorders.report_title
+        },
+        {   
+            extend: 'csv',
+            title: dd_backorders.report_title
+        },
         ],
         rowGroup: {
             dataSrc: '',

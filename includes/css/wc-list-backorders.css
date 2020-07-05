@@ -933,7 +933,7 @@ a.dt-button:hover:not(.disabled) {
 }
 
 .wrap > h2:first-child {
-    margin-bottom: 1.5em;
+    margin-bottom: 1.5rem;
     border-bottom: 1px solid #666;
     padding: .5em 0 1em;
 }
